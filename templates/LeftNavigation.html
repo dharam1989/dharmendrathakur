@@ -1,0 +1,25 @@
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" ng-controller="leftNavcontroller">
+<h3>Menu</h3>
+<a href="#/about">ABOUT</a>
+<a href="#">Dulse daikon</a>
+<a href="#">Zucchini garlic</a>
+<a href="#">Catsear azuki bean</a>
+<a href="#">Dandelion bunya</a>
+<a ng-click="toggleModal()">Login</a>
+
+
+<modal title="Login form" visible="showModal">
+    <form role="form">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password" />
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</modal>
+
+</nav>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <!-- Meta-Information -->
+    <title>Webdunia.com</title>
+    <meta charset="utf-8">
+    <!--<base href="/angular-example/">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Webdunia Inc.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/angular-material.min.css">
+   
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" type="text/css" href="css/jPushMenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/angular.autoHideStickyHeader.css" />
+     <link rel="stylesheet" type="text/css" href="css/ngProgress.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+   
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body ng-app="wd">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<!-- Our Website Content Goes Here -->
+<div ng-include='"templates/header.html"'></div>
+<!--<wd-header></wd-header>-->
+<left-menu></left-menu>
+<div class="wrapper" ng-view ng-show="true"></div>
+<div ng-include='"templates/footer.html"' ng-show="show"></div>
+
+<!-- Vendor: Angular, followed by our custom Javascripts -->
+<script src="js/angular.min.js"></script>
+
+
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-aria.js"></script>
+<script src="js/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="js/angular-material.min.js"></script>
+
+<script src="js/angular-route.js"></script>
+<script src="js/angular-resource.js"></script>
+
+
+<!-- Vendor: Javascripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/ui-bootstrap-tpls.min.js"></script>
+
+<!-- Our Website Javascripts -->
+<script src="js/jPushMenu.js"></script>
+<script src="js/angular.autoHideStickyHeader.js"></script>
+<script src="js/ngprogress.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/directives/directives.js"></script>
+<script src="js/controllers/controllers.js"></script>
+
+
+</body>
+</html>

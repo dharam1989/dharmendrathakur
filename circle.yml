@@ -9,7 +9,7 @@ experimental:
         - master
 machine:
   php:
-    version: 5.4.5
+  #  version: 5.4.5
 
 deployment:
   production:

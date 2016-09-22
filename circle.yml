@@ -7,11 +7,13 @@ experimental:
     branches:
       only:
         - master
+machine:
+  php:
+    version: 5.4.5
 
 deployment:
   production:
     branch: master
-    commands:
-      - "[[ ! -s \"$(git rev-parse --git-dir)/shallow\" ]] || git fetch --unshallow"
-      - heroku config:set DEPLOY_HASH=$CIRCLE_SHA1 DEPLOY_DATE=`date +"%Y-%m-%dT%H:%M:%SZ"` --app wd-app-test
-      - git push -f https://git.heroku.com/wd-app-test.git $CIRCLE_SHA1:refs/heads/master
+    heroku:
+	appname: wd-app-test
+    
